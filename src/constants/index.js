@@ -4,25 +4,29 @@ import {
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
-  reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
   threejs,
+  ensiasd,
+  est,
+  yanecode,
+  elec,
+  python,
+  php,
+  java,
+  laravel,
+  postgre,
+  mysql,
+  bootstrap,
 } from "../assets";
 
 export const navLinks = [
@@ -73,32 +77,32 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "Php",
+    icon: php,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "Java",
+    icon: java,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Python",
+    icon: python,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "Bootstrap",
+    icon: bootstrap,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "Laravel",
+    icon: laravel,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "MySQL",
+    icon: mysql,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "PostgreSQL",
+    icon: postgre,
   },
   {
     name: "git",
@@ -108,65 +112,49 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Big Data, AI, and Data Science Engineering",      
+    company_name: "National Higher School of Artificial Intelligence and Data Science (ENSIASD). | UIZ",
+    icon: ensiasd,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "DEC 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Currently enrolled as a prospective engineer at (ENSIASD) Taroudant, where I eagerly anticipate immersing myself in the domains of Data Science, Big Data, and AI! 🚀 Excitedly looking ahead to acquiring invaluable skills in these groundbreaking fields."
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Full stack Developer intern",
+    company_name: "YaneCode | Safi, Morocco",
+    icon: yanecode,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Avr 2023 - Mai 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Design and development of an online learning platform (E-learning) . Front-end: HTML, CSS, JS, Bootstrap. Back-end: Laravel. Worked with agile methodology (Kanban)."
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Full Stack Developer Intern",
+    company_name: "MR.elec | CasaBlanca, Morocco",
+    icon: elec,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Août 2022 - Sept 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Development of a website for solar pumping simulation and material management. In-depth knowledge of the solar industry. Front-end: HTML, CSS, Bootstrap. Back-end: PHP."
     ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+},
+{
+  title: "Computer Engineering",
+  company_name: "Safi Higher School of Technology (EST) safi | UCA ",
+  icon: est,
+  iconBg: "#E6DEDD",
+  date: " 2021 -  2023",
+  points: [
+    "Majoring in Computer Science, and earned a University Diploma in Technology. Delved into programming, algorithms, and system architecture, while completing practical projects and engaging in extracurricular activities to underscore dedication to learning and flexibility."
+  ],
+},
 ];
 
 const testimonials = [

@@ -1,10 +1,10 @@
-import React from "react";
+import React from "react";                              
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-
+import profileImage from '../assets/profile.jpg';
 import { styles } from "../styles";
 import { services } from "../constants";
-import { SectionWrapper } from "../hoc";
+import { SectionWrapper } from "../hoc";              
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
@@ -38,27 +38,27 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+      <motion.div variants={textVariant()} className="flex flex-col sm:flex-row items-start sm:items-center">
+        <div className="flex-1">
+          <p className={styles.sectionSubText}>Introduction</p>
+          <h2 className={styles.sectionHeadText}>Overview.</h2>
+          <motion.p
+            variants={fadeIn("", "", 0.1, 1)}
+            className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          >
+            Hello everyone! 👋🏻 I'm JADIR Mohammed, currently pursuing my studies in Big Data, AI, and Data Science Engineering at ENSIASD Taroudant. My passion for technology drives me, especially in the realms of artificial intelligence, web development, and computer science.
+            <br className='sm:block hidden' />
+            Beyond academics, I actively participate in tech communities and contribute to various projects, constantly seeking to broaden my knowledge and skills.
+            <br className='sm:block hidden' />
+            Let's connect and share our journey through the dynamic and ever-changing landscape of technology.
+            <br className='sm:block hidden' />
+            Let's work together to bring your ideas to life!
+          </motion.p>
+        </div>
+        <motion.div className="flex-shrink-0 mt-4 sm:mt-0 sm:ml-10">
+          <img src={profileImage} alt="Profile" className="w-60 h-80 rounded-full" />
+        </motion.div>
       </motion.div>
-
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
-      </motion.p>
-
-      <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
     </>
   );
 };

@@ -18,6 +18,13 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
+import php from "./tech/php.png";
+import java from "./tech/java.png";
+import python from "./tech/python.png";
+import laravel from "./tech/laravel.png";
+import mysql from "./tech/mysql.png";
+import bootstrap from "./tech/bootstrap.png";
+import postgre from "./tech/postgre.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
@@ -29,6 +36,10 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import ensiasd from "./ensiasd.png";
+import yanecode from "./yanecode.png";
+import est from "./est.png";
+import elec from "./elec.jpg";
 
 export {
   logo,
@@ -59,4 +70,15 @@ export {
   carrent,
   jobit,
   tripguide,
+  ensiasd,
+  est,
+  yanecode,
+  elec,
+  php,
+  python,
+  java,
+  laravel,
+  postgre,
+  mysql,
+  bootstrap,
 };

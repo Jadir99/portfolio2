@@ -1,5 +1,5 @@
-import React from "react";                              
-import Tilt from "react-tilt";
+import React from "react";    
+import Tilt from 'react-parallax-tilt';
 import { motion } from "framer-motion";
 import profileImage from '../assets/profile.jpg';
 import { styles } from "../styles";

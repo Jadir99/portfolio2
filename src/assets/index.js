@@ -33,8 +33,8 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
+import tweet from "./tweet.jpg";
+import elearning from "./elearning.png";
 import tripguide from "./tripguide.png";
 import ensiasd from "./ensiasd.png";
 import yanecode from "./yanecode.png";
@@ -67,8 +67,8 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
+  tweet,
+  elearning,
   tripguide,
   ensiasd,
   est,

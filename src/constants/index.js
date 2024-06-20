@@ -12,8 +12,8 @@ import {
   git,
   figma,
   docker,
-  carrent,
-  jobit,
+  tweet,
+  elearning,
   tripguide,
   threejs,
   ensiasd,
@@ -186,46 +186,46 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Sentiment Analysis",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    "Developed a Sentiment Analysis project on Twitter, collecting data using Selenium in Python. Analyzed the tweets using (NLP) techniques to classify them as positive, negative, or neutral. This project demonstrates proficiency in data collection, preprocessing, and machine learning model.",
     tags: [
       {
-        name: "react",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Selenium",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "NLP",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: tweet,
+    source_code_link: "https://github.com/Jadir99/Analyse-des-sentiments-sur-Twitter",
   },
   {
-    name: "Job IT",
+    name: "E-Learning",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
+    "Developed a comprehensive E-learning web application designed to facilitate online education. The platform includes user-friendly interfaces created with HTML, CSS, JS, and Bootstrap for the front-end, and a robust back-end built with Laravel."
+    ,tags: [
       {
-        name: "react",
+        name: "E-Learning",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Laravel",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "bootstrap",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: elearning,
+    source_code_link: "https://github.com/Jadir99/E-learning/",
   },
   {
     name: "Trip Guide",

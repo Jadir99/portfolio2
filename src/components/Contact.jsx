@@ -1,6 +1,6 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
+import { FaEnvelope, FaGithub, FaInstagram, FaPhone, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -8,62 +8,6 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {
-  const formRef = useRef();
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
-
-    setForm({
-      ...form,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "JavaScript Mastery",
-          from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
-        }
-      );
-  };
-
   return (
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
@@ -75,52 +19,17 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
-        >
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
-            <input
-              type='text'
-              name='name'
-              value={form.name}
-              onChange={handleChange}
-              placeholder="What's your good name?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
-            <input
-              type='email'
-              name='email'
-              value={form.email}
-              onChange={handleChange}
-              placeholder="What's your web address?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Message</span>
-            <textarea
-              rows={7}
-              name='message'
-              value={form.message}
-              onChange={handleChange}
-              placeholder='What you want to say?'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-
-          <button
-            type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
-          >
-            {loading ? "Sending..." : "Send"}
-          </button>
-        </form>
+        <div className='mt-8'>
+          <p className='text-white font-medium mb-2'>Contact Information:</p><br />
+          <ul className='text-white'>
+            <li className='flex items-center'><FaEnvelope className='mr-2' /> <a href="mailto:mohamad.jadir2018@gmail.com" className='hover:underline'>mohamad.jadir2018@gmail.com</a></li><br />
+            <li className='flex items-center'><FaGithub className='mr-2' /> <a href="https://github.com/Jadir99" target="_blank" rel="noopener noreferrer" className='hover:underline'>https://github.com/Jadir99</a></li><br />
+            <li className='flex items-center'><FaInstagram className='mr-2' /> <a href="https://www.instagram.com/jadir_semo/?igsh=cGIyNnhuYm1odmtu" target="_blank" rel="noopener noreferrer" className='hover:underline'>@jadir_semo</a></li><br />
+            <li className='flex items-center'><FaPhone className='mr-2' /> <a href="tel:+212682846580" className='hover:underline'>+212682846580</a></li><br />
+            <li className='flex items-center'><FaLinkedin className='mr-2' /> <a href="https://www.linkedin.com/in/mohammed-jadir/" target="_blank" rel="noopener noreferrer" className='hover:underline'>https://www.linkedin.com/in/mohammed-jadir/</a></li><br />
+            <li className='flex items-center'><FaTwitter className='mr-2' /> <a href="https://x.com/jadir99" target="_blank" rel="noopener noreferrer" className='hover:underline'>https://x.com/jadir99</a></li><br />
+          </ul>
+        </div>
       </motion.div>
 
       <motion.div

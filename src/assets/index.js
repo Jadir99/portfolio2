@@ -33,6 +33,13 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
+
+import mrelec from "./mrelec.png";
+import pfe from "./pfe.png";
+import stock from "./stock.png";
+import club from "./club.png";
+
+
 import tweet from "./tweet.jpg";
 import elearning from "./elearning.png";
 import tripguide from "./tripguide.png";
@@ -81,4 +88,8 @@ export {
   postgre,
   mysql,
   bootstrap,
+  mrelec,
+  pfe,
+  stock,
+  club,
 };

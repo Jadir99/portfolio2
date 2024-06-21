@@ -27,6 +27,10 @@ import {
   postgre,
   mysql,
   bootstrap,
+  mrelec,
+  pfe,
+  stock,
+  club,
 } from "../assets";
 
 export const navLinks = [
@@ -157,32 +161,7 @@ const experiences = [
 },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
+const testimonials = [];
 
 const projects = [
   {
@@ -228,9 +207,72 @@ const projects = [
     source_code_link: "https://github.com/Jadir99/E-learning/",
   },
   {
-    name: "Trip Guide",
+    name: "Club Management",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    "A Club Management Website that streamlines member registration, event scheduling, and reclamations. It offers easy administration and member interaction, ensuring efficient communication and organization within the club.",
+    tags: [
+      {
+        name: "Club-Management",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Laravel",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: club,
+    source_code_link: "https://github.com/jadir99/ClubManagement",
+  },
+  {
+    name: "MisterElec",
+    description:
+    "Development of a solar pumping simulation and material management website, demonstrating in-depth knowledge of the solar industry. Front-end technologies used include HTML, CSS, and Bootstrap, while the back-end is powered by PHP.",
+    tags: [
+      {
+        name: "Html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Php",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: mrelec,
+    source_code_link: "https://github.com/jadir99/simulation-de-pompage-solaire-et-gestion-des-mat-riaux",
+  },
+  {
+    name: "Stock-Management",
+    description:
+    "A Stock Management Website designed to efficiently track and manage inventory levels, orders, and deliveries. It allows for real-time inventory updates and report generation, streamlining operations and enhancing inventory control.",
+    tags: [
+      {
+        name: "Stock-Management",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Php",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: stock,
+    source_code_link: "https://github.com/jadir99/Gestion-de-stock",
+  },
+  {
+    name: "Python-Based Web Application for PostScript Formula Translation",
+    description:
+    "A Python-based web application designed to translate infix formulas into PostScript code, facilitating seamless exportation in postfix notation. The project simplifies the process of converting mathematical expressions into a format suitable for PostScript rendering.",
     tags: [
       {
         name: "nextjs",
@@ -245,8 +287,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: pfe,
+    source_code_link: "https://github.com/Jadir99/pfe_backend_frontend",
   },
 ];
 

@@ -41,15 +41,25 @@ import club from "./club.png";
 
 
 import tweet from "./tweet.jpg";
-import elearning from "./elearning.png";
+// import elearning from "./elearning.png";
 import tripguide from "./tripguide.png";
 import ensiasd from "./ensiasd.png";
 import yanecode from "./yanecode.png";
+import neuralnetworktraining from "./neuralnetworktraining.png";
 import est from "./est.png";
 import elec from "./elec.jpg";
+import azulai from "./azulai.png";
+import lol from "./lol.png";
+import products from "./products.png";
+import elearning from "./elearning1.png";
+import IT from "./IT.png";
+import gaming from "./gaming.png";
+import robotic from "./robotic.png";
 
 export {
   logo,
+  gaming,
+  robotic,
   backend,
   creator,
   mobile,
@@ -92,4 +102,9 @@ export {
   pfe,
   stock,
   club,
+  neuralnetworktraining,
+  azulai,
+  lol,
+  products,
+  IT,
 };

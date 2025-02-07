@@ -27,11 +27,17 @@ import {
   postgre,
   mysql,
   bootstrap,
-  mrelec,
   pfe,
   stock,
   club,
-} from "../assets";
+  neuralnetworktraining,
+  azulai,
+  lol,
+  products,
+  IT,
+  gaming,
+  robotic,
+  } from "../assets";
 
 export const navLinks = [
   {
@@ -186,27 +192,6 @@ const projects = [
     source_code_link: "https://github.com/Jadir99/Analyse-des-sentiments-sur-Twitter",
   },
   {
-    name: "E-Learning",
-    description:
-    "Developed a comprehensive E-learning web application designed to facilitate online education. The platform includes user-friendly interfaces created with HTML, CSS, JS, and Bootstrap for the front-end, and a robust back-end built with Laravel."
-    ,tags: [
-      {
-        name: "E-Learning",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Laravel",
-        color: "green-text-gradient",
-      },
-      {
-        name: "bootstrap",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: elearning,
-    source_code_link: "https://github.com/Jadir99/E-learning/",
-  },
-  {
     name: "Club Management",
     description:
     "A Club Management Website that streamlines member registration, event scheduling, and reclamations. It offers easy administration and member interaction, ensuring efficient communication and organization within the club.",
@@ -226,27 +211,6 @@ const projects = [
     ],
     image: club,
     source_code_link: "https://github.com/jadir99/ClubManagement",
-  },
-  {
-    name: "MisterElec",
-    description:
-    "Development of a solar pumping simulation and material management website, demonstrating in-depth knowledge of the solar industry. Front-end technologies used include HTML, CSS, and Bootstrap, while the back-end is powered by PHP.",
-    tags: [
-      {
-        name: "Html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Php",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: mrelec,
-    source_code_link: "https://github.com/jadir99/simulation-de-pompage-solaire-et-gestion-des-mat-riaux",
   },
   {
     name: "Stock-Management",
@@ -289,6 +253,165 @@ const projects = [
     ],
     image: pfe,
     source_code_link: "https://github.com/Jadir99/pfe_backend_frontend",
+  },
+   {
+    name: "Neural Network Training Web Application with Flask and TensorFlow",
+    description: "Development of a web application with Flask and TensorFlow, allowing users to train neural networks through an intuitive interface and import their own data.",
+    tags: [
+      {
+        name: "flask",
+        color: "blue-text-gradient"
+      },
+      {
+        name: "tensorflow",
+        color: "green-text-gradient"
+      },
+      {
+        name: "python",
+        color: "pink-text-gradient"
+      }
+    ],
+    image: neuralnetworktraining,
+    source_code_link: "https://github.com/Jadir99/Neural-network-training-web-application-with-Flask-and-TensorFlow"
+  }, 
+  {
+    name: "AZUL-AI",
+    description: "AZUL AI is an ambitious project aimed at transforming the tourism experience in Morocco through artificial intelligence. The project aims to offer visitors an immersive, informative, and culturally relevant experience throughout their journey.",
+    tags: [
+      {
+        name: "ai",
+        color: "blue-text-gradient"
+      },
+      {
+        name: "tourism",
+        color: "green-text-gradient"
+      },
+      {
+        name: "morocco",
+        color: "pink-text-gradient"
+      }
+    ],
+    image: azulai,
+    source_code_link: "https://azulaimaroc.com/"
+  },
+
+  {
+    name: "League of Legends Data Visualization Application",
+    description: "This application visualizes League of Legends data to provide insights and analysis on player statistics and game performance.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient"
+      },
+      {
+        name: "flask",
+        color: "green-text-gradient"
+      },
+      {
+        name: "league-of-legends",
+        color: "pink-text-gradient"
+      }
+    ],
+    image: lol,
+    source_code_link: "https://github.com/Jadir99/league-of-legend-prediction-win/"
+  },
+  {
+    name: "Sentiment Analysis from Product Reviews",
+    description: "Implementation of a machine learning model to classify Amazon customer reviews into three categories: positive, negative, or neutral, using data collected via scraping reviews from the platform.",
+    tags: [
+      {
+        name: "machine-learning",
+        color: "blue-text-gradient"
+      },
+      {
+        name: "python",
+        color: "green-text-gradient"
+      },
+      {
+        name: "nlp",
+        color: "pink-text-gradient"
+      }
+    ],
+    image:products,
+    source_code_link: "https://github.com/Jadir99/Sentiment-analysis-from-product-reviews"
+  },  {
+    name: "E-learning for YaneCode",
+    description: "An online educational platform for YaneCode, providing resources and online training for students in technology and programming.",
+    tags: [
+      {
+        name: "elearning",
+        color: "blue-text-gradient"
+      },
+      {
+        name: "education",
+        color: "green-text-gradient"
+      },
+      {
+        name: "technology",
+        color: "pink-text-gradient"
+      }
+    ],
+    image: elearning,
+    source_code_link: "https://yanecode.info/"
+  },
+  {
+    name: "IT-Innovation Club of ENSA- Morocco",
+    description: "The IT-Innovation Club of ENSA-Morocco focuses on technological innovation, artificial intelligence, and IoT.",
+    tags: [
+      {
+        name: "innovation",
+        color: "blue-text-gradient"
+      },
+      {
+        name: "ai",
+        color: "green-text-gradient"
+      },
+      {
+        name: "iot",
+        color: "pink-text-gradient"
+      }
+    ],
+    image: IT,
+    source_code_link: "https://it-club-ensiasd.netlify.app/"
+  },
+  {
+    name: "YaneCode Gaming",
+    description: "YaneCode Gaming, where every click becomes an adventure, invites you to explore our gaming universe.",
+    tags: [
+      {
+        name: "gaming",
+        color: "blue-text-gradient"
+      },
+      {
+        name: "entertainment",
+        color: "green-text-gradient"
+      },
+      {
+        name: "community",
+        color: "pink-text-gradient"
+      }
+    ],
+    image: gaming,
+    source_code_link: "https://gaming.yanecode.com/"
+  }, {
+    name: "YaneCode Robotic",
+    description: "YaneCode Robotic is dedicated to educating children, introducing them to the exciting world of robotics through interactive and fun tools.",
+    tags: [
+      {
+        name: "robotics",
+        color: "blue-text-gradient"
+      },
+      {
+        name: "education",
+        color: "green-text-gradient"
+      },
+      {
+        name: "children",
+        color: "pink-text-gradient"
+      }
+    ],
+    image: robotic,
+    source_code_link: "https://robotic.yanecode.com/"
   },
 ];
 
